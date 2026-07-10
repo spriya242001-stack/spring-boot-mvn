@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Product Catalog Hub</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 50px;
+            background-color: #f4f6f9;
+            text-align: center;
+        }
+        .hub-container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: inline-block;
+            min-width: 350px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        /* Style links to look like solid, clickable action buttons */
+        .nav-button {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 15px 0;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.2s ease;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .feedback-btn {
+            background-color: #28a745;
+        }
+        .feedback-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hub-container">
+    <h1>Product Catalog Dashboard</h1>
+
+    <a th:href="@{/add}" class="nav-button">Add Product</a>
+
+    <a th:href="@{/display}" class="nav-button">Display Product</a>
+
+    <a th:href="@{/feedback}" class="nav-button feedback-btn">Give Book Feedback</a>
+</div>
+
+</body>
+</html>
